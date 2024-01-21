@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <math.h> // for pow() 
 
@@ -27,15 +26,5 @@ void main() {
     } else {
         printf("%d is not an armstrong number", num);
     }
-
-}
-
-{
-    
-Enter the number :  153
-153 is an armstrong number
-
-Enter the number :  200
-200 is not an armstrong number
 
 }
