@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops and Conditional</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("Enter your age"));
+    if(num<=0){
+        console.log("Invalid Age");
+    }else if(num==1){
+        console.log("You are an Infant");
+    }else if(num<18){
+        console.log("You are a Kid");
+    }else{
+        console.log("You are an Adult");
+    }
+
+    num = parseInt(prompt("Enter the Day"));
+switch (num) {
+case 1:
+    console.log("Its Monday");
+    break;
+case 2:
+    console.log("Its Tuesday");
+    break;
+case 3:
+    console.log("Its Wednesday");
+    break;
+case 4:
+    console.log("Its Thursday");
+    break;
+case 5:
+    console.log("Its Friday");
+    break;
+case 6:
+    console.log("Its Saturday");
+    break;
+case 7:
+    console.log("Its Sunday");
+    break;
+default:
+    console.log("Invalid Day");
+    break;
+}
+
+console.log("Running while loop :-");
+let i = 1;
+while(i<=5){
+    console.log(i);
+    i++;
+}
+
+console.log("Running Do-while loop :-");
+do{
+    console.log(i);
+    i++
+}while(i<10);
+
+console.log("Running For loop :-");
+for(i = 1; i <= 5; i++){
+    console.log(i);
+}
+
+console.log("Running for-in Loop :-");
+let a = {name:"Sujal", age:18, city:"Delhi"};
+for(let key in a){
+    console.log(`${key} : ${a[key]}`);
+}
+
+console.log("Running For-of Loop :-");
+let b = ["Apple", "Orange", "Mango"];
+for(let item of b){
+    console.log(item);
+}
+</script>
+</body>
+</html>

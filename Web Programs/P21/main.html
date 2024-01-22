@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="atLoad()">
+    <center><h2>Registration Form</h2></center>
+<form id="clgreg">
+<fieldset>
+<p><label>Salutation : 
+<select name="Salutation">
+    <option>Mr.</option>
+    <option>Mrs.</option>
+    <option>Ms.</option>
+</select></label></p>
+<p><label>Full Name : <input type="text" id="name" onfocus="atFocus(this)" onblur="atBlur(this)" onchange="atChange(this)"></label></p>
+<p><label>Age (as on 1 Aug 2023) : <input type="number" id="age" onfocus="atFocus(this)" onblur="atBlur(this)" onchange="atChange(this)"></label></p>
+<p><label>Contact Number : <input type="tel" id="contact" onfocus="atFocus(this)" onblur="atBlur(this)" onchange="atChange(this)"></label></p>
+<p><button type="submit" onclick="atSubmit()">Submit</button>  <button type="reset" onclick="atReset()">Reset</button></p>
+</fieldset>
+</form>
+<script>
+    function atLoad(){
+        console.log("Page is loaded");
+    }
+    function atFocus(x){
+        x.style.background = "yellow";
+        console.log(`${x.id} field is in focus`);
+    }
+    function atBlur(x){
+        x.style.background = "";
+        x.value = x.value.toUpperCase();
+        console.log(`${x.id} field removed from focus`);
+    }
+    function atChange(x){
+        console.log(`${x.id} changed to ${x.value}`);
+    }
+    function atSubmit(){
+        console.log("Form Submitted Successfully");
+    }
+    function atReset(){
+        console.log("Resetted Form Successfully");
+        location.reload();
+    }
+</script>
+</body>
+</html>

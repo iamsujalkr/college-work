@@ -1,0 +1,20 @@
+bookstore{
+    background-color: #ffffcc;
+    font-size: 20px;
+}
+book {
+    display: block;
+    border: 1px solid silver;
+    padding: 5px;
+    margin: 5px;
+}
+name ,author ,price{
+    display: block;
+    text-align: center;
+}
+name{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: indianred;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial,Prime Number and Reverse</title>
+</head>
+<body>
+<script>
+let num = parseInt(prompt("Enter the number for Factorial"));
+let factor = 1;
+for(let i = 1; i <= num; i++){
+    factor*=i;
+}
+console.log(`Factorial of ${num} = ${factor}`);
+
+num = parseInt(prompt("Enter the number till to print Prime Number"));
+console.log(`The following are Prime Numbers till ${num}:-`);
+for(i = 1; i <= num; i++){
+    let flag = true;
+    for(let j = 2; j < i; j++){
+        if(i%j==0){
+            flag = false;
+            break;
+        }
+    }
+    if(flag){
+        console.log(i);
+    }
+}
+
+num = parseInt(prompt("Enter the number to Reverse"));
+let tnum = num;
+let reverse = 0,rem = 1;
+while(parseInt(tnum) != 0){
+    rem = parseInt(tnum) % 10;
+    tnum/=10;
+    reverse = (reverse*10) + rem;
+}
+console.log(`Reverse of ${num} = ${reverse}`);
+</script>
+</body>
+</html>

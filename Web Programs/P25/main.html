@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMl Element</title>
+    <style>
+        body{
+            background-color: #ffffcc;
+        }
+        #test{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="test">This Text Background color will change</h1>
+    <button onclick="change()">Click Me</button>
+<script>
+function change(){
+    document.getElementById("test").style.backgroundColor = "pink";
+    document.getElementById("test").innerText = "background color changed successfully";
+}
+</script>
+</body>
+</html>

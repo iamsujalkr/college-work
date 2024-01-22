@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<food_menu>
+    <category>
+        <name>Paneer Tikka</name>
+        <price>150</price>
+        <calories>400</calories>
+    </category>
+
+    <category>
+        <name>Manchurian</name>
+        <price>200</price>
+        <calories>350</calories>
+    </category>
+
+    <category>
+        <name>Fried Rice</name>
+        <price>200</price>
+        <calories>250</calories>
+    </category>
+
+    <category>
+        <name>Shai Paneer</name>
+        <price>150</price>
+        <calories>500</calories>
+    </category>
+</food_menu>

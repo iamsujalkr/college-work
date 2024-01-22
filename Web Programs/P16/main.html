@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h2>College Registration Form</h2></center>
+<form id="clgreg">
+<fieldset>
+<p><label>Salutation : 
+<select name="Salutation">
+    <option>Mr.</option>
+    <option>Mrs.</option>
+    <option>Ms.</option>
+</select></label></p>
+<p><label>Full Name : <input type="text" id="name"></label></p>
+<p><label>Date of Birth : <input type="date" id="DOB"></label></p>
+<p><label>Age (as on 1 Aug 2023) : <input type="number" id="age"></label></p>
+<p><label>Contact Number : <input type="tel" id="contact"></label></p>
+<p><input type="submit" value="Submit" onclick="validate()">  <input type="reset" value="Reset"></p>
+</fieldset>
+</form>
+<script>
+function validate(){
+    let name = document.getElementById("name");
+    let DOB = document.getElementById("DOB");
+    let age = document.getElementById("age");
+    let contact = document.getElementById("contact");
+
+    if(name.value == ""){
+        alert("Name cannot be empty");
+    }else if(DOB.value == ""){
+        alert("DOB cannot be empty");
+    }else if(age.value == "" || age.value <= 0){
+        alert("Age cannot be empty or less than equal to 0");
+    }else if(contact.value.length != 10){
+        alert("Contact Number should be 10 digit");
+    }else{
+        document.getElementById("clgreg").innerHTML = "<center><h2>Submitted Succesfully!</h2></center>"
+    }
+}
+</script>
+</body>
+</html>

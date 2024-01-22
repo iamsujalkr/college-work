@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookstore SYSTEM "P30.dtd">
+<bookstore>
+    <book>
+        <name>Introduction to C Programming</name>
+        <author>Yashwant Kanekar</author>
+        <price>350</price>
+    </book>
+    <book>
+        <name>Introduction to Javascript</name>
+        <author>Sujal Kumar</author>
+        <price>500</price>
+    </book>
+    <book>
+        <name>Introduction to Black Hat Hacking</name>
+        <author>Sujal Kumar</author>
+        <price>1000</price>
+    </book>
+</bookstore>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMl Element</title>
+</head>
+<body bgcolor="#ffffcc">
+    <img src="logo.png" height="300" width="300" title="MSI" id="photo">
+    <p id="test">Size of Picture will change</p>
+    <button onclick="change()">Click Me</button>
+<script>
+function change(){
+    document.getElementById("photo").setAttribute("height", "200");
+    document.getElementById("photo").setAttribute("width", "200");
+    document.getElementById("test").innerText = "SIze changed successfully";
+}
+</script>
+</body>
+</html>

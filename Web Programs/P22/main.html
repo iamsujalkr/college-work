@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events handling</title>
+</head>
+<body>
+    <label>Enter anything : <input type="text" onkeydown="down()" onkeyup="up()"></label>
+    <p id="down1"></p>
+    <p id="up1"></p>
+<script>
+    function down(){
+        document.getElementById("down1").innerText = "You pressed a key in the input box";
+        console.log("You pressed a key in the input box");
+    }
+    function up(){
+        document.getElementById("up1").innerText = "You released a key from the input box";
+        console.log("You released a key from the input box");
+    }
+</script>
+</body>
+</html>

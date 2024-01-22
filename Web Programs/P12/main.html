@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Operators</title>
+</head>
+<body>
+<script>
+    alert("Program to demonstrate all Javascript operators");
+    let num1 = 20;
+    let num2 = 5;
+    let sum = num1 + num2;
+    let diff = num1 - num2;
+    let multi = num1 * num2;
+    let quot = num1 / num2;
+    let mod = num1 % num2;
+    let exp = num2**2;
+    alert(`Arithmetic Operators :-\nLet a = 20 and b = 5\na + b = ${sum}\na - b = ${diff}\na * b = ${multi}\na / b = ${quot}\na % b = ${mod}\na**2 = ${exp}`);
+    alert(`Assignment Operators :-\na = 20\na+=5 = ${num1+=5}\na-=5 = ${num1-=5}\na*=5 = ${num1*=5}\na/=5 = ${num1/=5}\nNow a = ${num1}`);
+    alert(`Comparison Operators :-\nLet a = 20 and b = 5\na==b = ${num1==num2}\na!=b = ${num1!=num2}\na>b = ${num1>num2}\na<b = ${num1<num2}\na>=b = ${num1>=num2}\na<=b = ${num1<=num2}`);
+    alert(`Logical Operators :-\nLet a = 20 and b = 5\na>b && b>a = ${(num1>num2)&&(num2>num1)}\na>b || b>a = ${(num1>num2)||(num2>num1)}\n!(a>b && b>a) = ${!((num1>num2)&&(num2>num1))}`);
+    alert(`Bitwise Operators :-\nLet a = 20 and b = 5\na&b = ${num1&num2}\na|b = ${num1|num2}\na^b = ${num1^num2}\n~a = ${~num1}\na>>b = ${num1>>num2}\na<<b = ${num1<<num2}`);
+    alert(`Conditional Operator :-\nLet a = 20 and b = 5\nc = (a>b)? a : b\nc = ${(num1>num2)? num1: num2}`);
+    alert(`Type Operator :-\nLet a = 20\nNow typeof(a) = ${typeof(num1)}`);
+</script>    
+</body>
+</html>

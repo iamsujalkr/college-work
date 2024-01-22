@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date, Math and String</title>
+</head>
+<body>
+<p id="sh"></p>
+<script>
+    console.log("Using Date object :-");
+    let currTime = new Date();
+    document.getElementById("sh").innerText = "Current Time is "+currTime;
+    console.log(currTime);
+
+    console.log("Using Math object :-");
+    let arr = [1,7,4,9,6,3];
+    console.log(arr);
+    console.log(`Max Number = ${Math.max(...arr)}`);
+    console.log(`Min Number = ${Math.min(...arr)}`);
+    console.log(`Square root of 25 = ${Math.sqrt(25)}`);
+
+    console.log("Using String Object :-");
+    let str = "Hello World";
+    console.log(str);
+    console.log(`Upper case str = ${str.toUpperCase()}`);
+    console.log(`Lower case str = ${str.toLowerCase()}`);
+</script>
+</body>
+</html>

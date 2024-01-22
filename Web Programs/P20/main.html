@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event handling</title>
+<style>
+    #mydiv{
+        height: 100px;
+        width: 200px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 20px;
+        background-color: #ffffcc;
+        color: red;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <button id="mydiv" onclick="clicked()" ondblclick="dbClick()" onmouseover="over()" onmouseout="out()" onmousemove="move()">Button to demonstrate events</button> 
+<script>
+function clicked(){
+    console.log("Div clicked");
+}
+function dbClick(){
+    console.log("Div is double clicked");
+}
+function over(){
+    console.log("Mouse is over the div");
+}
+function out(){
+    console.log("Mouse is out from the div");
+}
+function move(){
+    console.log("Mouse is moving over the div");
+}
+</script>
+</body>
+</html>

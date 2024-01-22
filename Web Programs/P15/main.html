@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+<script>
+    console.log("Creating object by object literal :-");
+    let obj1 = {
+        id : "obj1",
+        name : "Sujal",
+        age : 18,
+        city : "Delhi"
+    }
+    console.log(obj1);
+
+    console.log("Creating object by instance of object directly :-");
+    let obj2 = new Object();
+    obj2.id = "obj2";
+    obj2.name = "Sujal";
+    obj2.age = 18;
+    obj2.city = "Delhi";
+    console.log(obj2);
+
+    console.log("Creating object by using object constructor :-");
+    function person(id,name,age,city){
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.city = city;
+    }
+    let obj3 = new person("obj3", "Sujal", 18, "Delhi");
+    console.log(obj3);
+</script>
+</body>
+</html>

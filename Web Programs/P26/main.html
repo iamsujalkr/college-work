@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object</title>
+</head>
+<body>
+<script>
+    console.log("Navigator Object :-");
+    console.log("Browser Name : ",navigator.appName);
+    console.log("Browser version : ",navigator.appVersion);
+    console.log("Browser cookies enabled : ",navigator.cookieEnabled);
+
+    console.log("Screen Object :-");
+    console.log(`Availabe width = ${screen.availWidth} pixels`);
+    console.log(`Available height = ${screen.availHeight} pixels`);
+    console.log(`Total width = ${screen.width} pixels`);
+    console.log(`Total height = ${screen.height} pixels`);
+
+    console.log("Set-time function :-");
+    window.setTimeout(function (){
+        console.log("Text displayed after 2000 miliseconds");
+    },2000);
+</script>
+</body>
+</html>
