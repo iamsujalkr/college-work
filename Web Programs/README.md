@@ -1,5 +1,5 @@
 # Web Programs
-This folders contains programs related to Web Designing. This mainly includes programs of HTML and basic CSS & Javascript.
+This folders contains programs related to Web Designing. This mainly includes programs of HTML and basic CSS & Javascript. It includes programs covering topics like Basic HTML pages, Forms, Image Mapping, CSS - Pseudo Classes, Bootstrap, Javascript - Datatypes, operators, dialog boxes, control structures, function, objects, event handling,   Document Object Model and creating XML files.
 
 ## :ledger: [Programs Index](https://github.com/iamsujalkr/college-work/blob/main/Web%20Programs/Program%20Index.pdf)
 
