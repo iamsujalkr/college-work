@@ -5,8 +5,8 @@ This repository is made to showcase my work I have done throught the College Lif
 This Repository is currently<b> in development</b> and does not represent my final nature of work. A lot of learnings is still left.
 
 ## :notebook_with_decorative_cover: Tech Stack
-- C Programming
-- Web Designing
+- [C Programming](https://github.com/iamsujalkr/college-work/tree/main/C%20Programs)
+- [Web Designing](https://github.com/iamsujalkr/college-work/tree/main/Web%20Programs)
 
 ## :gem: Acknowledgements
  - My College Teachers
