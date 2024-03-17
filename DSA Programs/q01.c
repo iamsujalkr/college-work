@@ -39,8 +39,9 @@ void main(){
         printf("Enter the element to insert :  ");
         scanf("%d", &element);
         for(int i = 0; i < used_size; i++){
-            if(element < arr[i]){
+            if(element < arr[i]) {
                 add_pos = i;
+                break;
             }
         }
         array_insert(add_pos, element);
@@ -53,7 +54,7 @@ void main(){
         scanf("%d", &element);
         printf("Enter the index :  ");
         scanf("%d", &add_pos);
-        array_insert(add_pos, element-1);
+        array_insert(add_pos-1, element);
         printf("Updated Array :- ");
         display_array();
         break;
@@ -109,7 +110,7 @@ void array_insert(int add_pos, int element){
     /* Inserts the given element at the specified index*/
 
     // Shifing array elements 
-    for(int i = used_size; i >= add_pos; i--){
+    for(int i = used_size; i > add_pos; i--){
         arr[i] = arr[i-1];
     }
     // Inserting element at the specified index and incrementing used_size of array
