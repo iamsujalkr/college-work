@@ -9,6 +9,7 @@ struct bst {
 
 struct bst* create(int key);
 void insert();
+struct bst* rinsert(struct bst *root, int key);
 struct bst* search(struct bst* root, int key);
 struct bst* delete(struct bst *root, int key);
 struct bst* inorderpre(struct bst *root);
@@ -161,6 +162,24 @@ struct bst* inorderpre(struct bst *root){
     root = root->left;
     while (root->right!=NULL){
         root = root->right;
+    }
+    return root;
+}
+
+struct bst* rinsert(struct bst *root, int key){
+    if(root == NULL){
+        return create(key);
+    }
+
+    if(key == root->info){
+        printf("Cannot insert same key in tree");
+        return NULL;
+    }
+    else if(key > root->info){
+        root->right = rinsert(root->right, key);
+    }
+    else{
+        root->left = rinsert(root->left, key);
     }
     return root;
 }
