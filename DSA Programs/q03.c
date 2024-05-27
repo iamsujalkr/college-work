@@ -9,6 +9,8 @@ void bubble();
 void insertion();
 void selection();
 void display_array();
+void merge(int arr[], int low, int mid, int high);
+void mergesort(int arr[], int low, int high);
 
 void main(){
     printf("Choose from the following operations :-");
@@ -43,6 +45,10 @@ void main(){
         display_array();
         break;
     case 4:
+        input_array();
+        mergesort(arr, 0, used_size-1);
+        printf("\nArray after Merge sort :-\n");
+        display_array();
         break;
     case 5:
         break;
@@ -127,5 +133,51 @@ void display_array(){
     }
     else{
         printf("The Array is empty!");
+    }
+}
+
+void merge(int arr[], int low, int mid, int high){
+    int size = (high-low)+1;
+    int *A = (int*)malloc(size * sizeof(int));
+    int i = low;
+    int j = mid + 1;
+    int k = 0;
+
+    while (i <= mid && j <= high){
+        if(arr[i] < arr[j]){
+            A[k] = arr[i];
+            i++, k++;
+        }
+        else if(arr[i] > arr[j]){
+            A[k] = arr[j];
+            j++, k++;
+        }
+        else{
+            A[k] = arr[i];
+            i++, k++;
+            A[k] = arr[j];
+            j++, k++;
+        }
+    }
+    while(i <= mid){
+        A[k] = arr[i];
+        i++, k++;
+    }
+    while(j <= high){
+        A[k] = arr[j];
+        j++, k++;
+    }
+
+    for(i = low, j = 0; i <= high; i++, j++){
+        arr[i] = A[j];
+    }    
+}
+
+void mergesort(int arr[], int low, int high){
+    if(low < high){
+        int mid = (low+high) / 2;
+        mergesort(arr, low, mid);
+        mergesort(arr, mid+1, high);
+        merge(arr, low, mid, high);
     }
 }
