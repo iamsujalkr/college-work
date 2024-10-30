@@ -1,0 +1,13 @@
+str1 = input("Enter a String :  ")
+print("capitalize() - ",str1.capitalize())
+print("casefold() - ",str1.casefold())
+print("isalnum() - ",str1.isalnum())
+print("isalpha() - ",str1.isalpha())
+print("isdigit() - ",str1.isdigit())
+print("lower() - ",str1.lower())
+print("upper() - ",str1.upper())
+print("swapcase() - ",str1.swapcase())
+print("title() - ",str1.title())
+print("endswith('a') - ",str1.endswith('a'))
+print("startswith('H') - ",str1.startswith('H'))
+
